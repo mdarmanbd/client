@@ -1,0 +1,119 @@
+.main{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.pl-10{
+    padding-left: 10px;
+}
+
+.pl-5{
+    padding-left: 5px;
+}
+
+.nav-title {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    color: black;
+
+}
+
+.search-nav{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    padding: 2px 6px;
+    
+}
+
+.search-nav input {
+    border: none;
+    outline: none;
+    padding: 3px 5px;
+    width: 220px;
+}
+
+
+.Electronifly-menu{
+    margin-left: 40px;
+    position: relative;
+}
+
+ button{
+    border: none;
+}
+
+.button-primary{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+   
+}
+
+button:hover i {
+    color: rgb(104, 104, 230);
+}
+
+.dropdown{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 120px;
+    padding: 5px 0px 5px 10px;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease; 
+}
+
+.item{
+    font-size: 16px;
+    font-weight: 400;
+    color: #374151;
+    text-align: center;
+}
+.button-primary:hover p{
+    color: rgb(104, 104, 230);
+} 
+
+.Electronifly-menu:hover .dropdown{
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    top: 35px;
+}
+
+.icon-link{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;  
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-link i {
+    text-align: center;
+}
+
+.bell-icon{
+    position: relative;
+}
+
+.bell-icon::after{
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: red;
+}
