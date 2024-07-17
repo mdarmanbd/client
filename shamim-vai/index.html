@@ -20,11 +20,11 @@
          <link rel="stylesheet" href="./asset/css/responsive.css">
     </head>
     <body>
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        Two colum Start
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section class="row gap-0 mr-0 ml-0 pr-0 pl-0">
-           <aside class="col-lg-3 pr-0 pl-0">
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Aside bar Start
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+           <aside class="d-none d-md-none d-lg-block col-lg-3 pr-0 pl-0">
                 <div class="aside-content">
                     <div class="flex">
                         <img src="./asset/img/logo.svg">
@@ -38,7 +38,6 @@
                             Dashboard
                         </h5>
                     </div>
-
                     <ul>
                         <li class="mt-20 cursor-pointer list">
                             <div onclick="isEmployesOpen(this)" class="flex Checklist">
@@ -305,7 +304,6 @@
                             </ul>
                         </li>
                     </ul>
-
                     <div class="person flex cursor-pointer">
                         <img class="profile" src="./asset/img/profile.jpg"> 
                         <div class="flex w-190" >
@@ -319,15 +317,342 @@
                         </div>
                     </div>
                 </div>
-               
            </aside>
-            <div class="col-lg-9 pr-0 pl-0">
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Aside bar End
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="col-sm-12 col-md-12 col-lg-9 pr-0 pl-0">
                 <div class="main">
-                    <header class="flex ">
-                        <h4 class="nav-title ">
+                       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            Mobile Responsive Start
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <div class="mobile-menu d-lg-none">
+                            <div class="mobile-menu-header flex">
+                                <div class="flex">
+                                    <button onclick="humbargerBtn()" class="humbargerBtn ">
+                                        <i class="fas fa-bars fs-2 text-black "></i>
+                                    </button>
+                                    
+                                    <img class="pl-10" src="./asset/img/logo.svg">
+                                    <h6 class="brand-name ">
+                                        talently
+                                    </h6>
+                                </div>
+                                <div class="ml-auto flex">
+                                    <a href="#" class="icon-link bell-icon">
+                                        <i class="far fa-bell color-base text-15"></i>
+                                    </a>
+                                    <img class="mobile-profile" src="./asset/img/profile.jpg"> 
+                                </div>
+                            </div>
+                            <div id="mobileMenu" class="toggled-mobile-menu d-flex w-full">
+                                <div class="w-80 pt-2 overflow-y">
+                                    <div class="flex">
+                                        <div class="flex">
+                                            <img class="pl-10" src="./asset/img/logo.svg">
+                                            <h6 class="brand-name ">
+                                                talently
+                                            </h6>
+                                        </div>
+                                        <button onclick="closeBtn()" class="closeBtn ml-auto pe-2">
+                                            <img src="./asset/img/close.svg">
+                                        </button>
+                                    </div>
+                                    <div class="px-2">
+                                        <ul class="">
+                                            <li class="mt-20 cursor-pointer list">
+                                                <div onclick="isEmployesOpen(this)" class="flex Checklist">
+                                                    <img class="svg-icon" src="./asset/img/person.svg">
+                                                    <h5 class="title">
+                                                        Employes
+                                                    </h5>
+                                                    <i class="fas fa-chevron-down ml-auto color-base text-15"></i>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                My Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Team Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                               Employes Tim...
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 fas fa-cog"></i>
+                                                            <p class="sub-title">
+                                                               Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                    
+                                            <li class="mt-20 cursor-pointer list">
+                                                <div onclick="isChecklistOpen(this)" class="flex Checklist">
+                                                    <img class="svg-icon" src="./asset/img/list.svg">
+                                                    <h5 class="title">
+                                                        Checklist
+                                                    </h5>
+                                                    <i class="fas fa-chevron-down ml-auto color-base text-15"></i>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                My Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Team Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Employes Tim...
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 fas fa-cog"></i>
+                                                            <p class="sub-title">
+                                                                Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                    
+                                            <li class="mt-20 cursor-pointer list">
+                                                <div onclick="isTimeOpen(this)" class="flex Checklist">
+                                                    <img class="svg-icon" src="./asset/img/time.svg">
+                                                    <h5 class="title">
+                                                        Time Off
+                                                    </h5>
+                                                    <i class="fas fa-chevron-down ml-auto color-base text-15"></i>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                My Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Team Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Employes Tim...
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 fas fa-cog"></i>
+                                                            <p class="sub-title">
+                                                                Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                    
+                                            <li class="mt-20 cursor-pointer list">
+                                                <div onclick="isAttendanceOpen(this)" class="flex Checklist">
+                                                    <img class="svg-icon" src="./asset/img/attendance.svg">
+                                                    <h5 class="title">
+                                                        Attendance
+                                                    </h5>
+                                                    <i class="fas fa-chevron-down ml-auto color-base text-15"></i>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                My Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Team Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Employes Tim...
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 fas fa-cog"></i>
+                                                            <p class="sub-title">
+                                                                Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                    
+                                            
+                                            <li class="mt-20 cursor-pointer list">
+                                                <div onclick="isPayrollOpen(this)" class="flex Checklist">
+                                                    <img class="svg-icon" src="./asset/img/payroll.svg">
+                                                    <h5 class="title">
+                                                        Payroll
+                                                    </h5>
+                                                    <i class="fas fa-chevron-down ml-auto color-base text-15"></i>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                My Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Team Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Employes Tim...
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 fas fa-cog"></i>
+                                                            <p class="sub-title">
+                                                                Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                    
+                                            <li class="mt-20 cursor-pointer list">
+                                                <div onclick="isRecruitmentOpen(this)" class="flex Checklist">
+                                                    <img class="svg-icon" src="./asset/img/git.svg">
+                                                    <h5 class="title">
+                                                        Recruitment
+                                                    </h5>
+                                                    <i class="fas fa-chevron-down ml-auto color-base text-15"></i>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                My Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Team Time Off
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 far fa-clock"></i>
+                                                            <p class="sub-title">
+                                                                Employes Tim...
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-menu-list">
+                                                        <a class="flex" href="#">
+                                                            <i class="color-base text-15 fas fa-cog"></i>
+                                                            <p class="sub-title">
+                                                                Settings
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="person flex cursor-pointer">
+                                            <img class="profile" src="./asset/img/profile.jpg"> 
+                                            <div class="flex w-190" >
+                                                <p class="name">
+                                                    Jaydon Levin
+                                                    <small>
+                                                        example@gmail.com
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div onclick="closeBtn()" class="bg-light-black w-20"></div>
+                            </div>
+                        </div>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            Mobile Responsive End
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Header Start 
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <header class=" pt-4 pt-lg-0 d-lg-flex flex justify-around">
+                        <h4 class="nav-title d-none d-sm-none d-md-none d-lg-block">
                             Dashboard
                         </h4>
-                        <div class="search-nav">
+                        <div class="search-nav ">
                             <i class="text-15 color-base fas fa-search"></i>
                             <input type="text" >
                             <div class="flex">
@@ -335,7 +660,7 @@
                                 <i class="pl-10 color-base text-15 fab fa-kickstarter-k"></i>
                             </div>
                         </div>
-                        <div class="Electronifly-menu">
+                        <div class="Electronifly-menu d-none d-sm-none d-md-none d-lg-none d-xl-block">
                             <button class="flex bg-white button-primary">
                                 <p class="color-base">
                                     Electronifly
@@ -343,12 +668,12 @@
                                 <i class="fas fa-chevron-down color-base text-15 pl-5"></i>
                             </button>
                             <div class="dropdown">
-                                <a href="#" class="item">Hello world</a>
-                                <a href="#" class="item">Hello world</a>
-                                <a href="#" class="item">Hello world</a>
+                                <a href="#" class="item">Jhon dho</a>
+                                <a href="#" class="item">Michel trent</a>
+                                <a href="#" class="item">Trentoo dho</a>
                             </div>
                         </div>
-                       <div class="nav-icon flex pl-10">
+                       <div class="nav-icon flex d-none d-sm-noen d-md-none d-lg-flex">
                             <a href="#" class="icon-link">
                                 <i class="fas fa-globe color-base text-15"></i>
                             </a>
@@ -359,9 +684,81 @@
                                 <i class="far fa-bell color-base text-15"></i>
                             </a>
                        </div>
+                       <div class="odama flex cursor-pointer d-none d-sm-none d-md-flex d-lg-flex">
+                            <p>
+                                Odarma Studio
+                            </p>
+                            <span class="fire">
+                                <i class="text-white text-15 fas fa-fire"></i>
+                            </span>
+                            <i class="fas fa-caret-down color-base text-15 pl-5"></i>
+                       </div>
                     </header>
+                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Header End 
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Main Body Start 
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div class="row g-3 mr-0 ml-0 pr-0 pl-0 mt-40 ">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                            <div class="d-flex gap-3 align-items-center shadow p-4 border-radius-8">
+                                <div class="card-icon bg-annual">
+                                    <i class="fas fa-calendar-alt text-15 text-white"></i>
+                                </div>
+                                <h5 class="card-name">
+                                    Annual
+                                    <span>
+                                        16 Days
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                            <div class="d-flex gap-3 align-items-center shadow p-4 border-radius-8">
+                                <div class="card-icon bg-sick">
+                                    <i class="far fa-sticky-note  text-15 text-white"></i>
+                                </div>
+                                <h5 class="card-name">
+                                    Sick Leave
+                                    <span>
+                                        7 Days
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                            <div class="d-flex gap-3 align-items-center shadow p-4 border-radius-8">
+                                <div class="card-icon bg-casual">
+                                    <i class="far fa-clipboard text-15 text-white"></i>
+                                </div>
+                                <h5 class="card-name">
+                                    Casual Leave
+                                    <span>
+                                        Unpaid
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                            <div class="d-flex gap-3 align-items-center shadow p-4 border-radius-8">
+                                <div class="card-icon bg-wedding">
+                                    <i class="fas fa-crown text-15 text-white"></i>
+                                </div>
+                                <h5 class="card-name">
+                                    Wedding
+                                    <span>
+                                        4 Days
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Main Body End 
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 </div>
-               
             </div>
         </section>
      

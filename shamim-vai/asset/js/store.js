@@ -98,3 +98,12 @@ function isRecruitmentOpen(element){
         icon.classList.add('fa-chevron-down');
     }
 }
+
+
+function humbargerBtn() {
+    document.getElementById('mobileMenu').classList.add('active');
+}
+
+function closeBtn() {
+    document.getElementById('mobileMenu').classList.remove('active');
+}
